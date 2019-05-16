@@ -1,1 +1,5 @@
-# ASE2019DR
+# Learning to Recommend Relevant API Documentation for Answering Developer Questions
+
+Recommending relevant API documentation to questions on developer question and answering websites can be useful to help solve questions.
+In this paper, we propose a deep learning based approach to identify relevant API documents from API documentation to help solve developer questions on API Q\&A forums that only take API-specific questions. Our approach use Gated Recurrent Unit (GRU) to train embedding vectors for questions and API documentation separately, and add weights to reflect the different importances of varied API documents in the vector training. Furthermore, our approach is designed to train on positive and negative examples with a loss function that trains our approach towards reducing the distance between questions and their relevant documents, but increasing the distance between questions and their irrelevant documents.
+We have conducted several experiments to evaluate our approach on three popular API Q\&A forums, Twitter, eBay, and AdWords. The results show that our approach can outperform all of the studied 12 baselines, and can improve them by up to 63.5\% in terms of AUC. Our approach can obtain a high AUC of 0.78, 0.85, and 0.77 on identifying relevant API documents on Twitter, eBay, and AdWords, respectively.
